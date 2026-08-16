@@ -58,7 +58,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 84px;
+  scroll-padding-top: 108px;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -149,8 +149,8 @@ ul { padding: 0; list-style: none; }
 }
 
 .brand-logo {
-  width: 68px;
-  height: 68px;
+  width: 84px;
+  height: 84px;
 }
 
 .site-nav {
@@ -231,12 +231,12 @@ ul { padding: 0; list-style: none; }
 }
 
 .hero-logo {
-  width: 66px;
-  height: 66px;
-  border-radius: 12px;
+  width: 88px;
+  height: 88px;
+  border-radius: 14px;
   background: rgba(255, 255, 255, 0.92);
-  padding: 5px;
-  margin-bottom: 20px;
+  padding: 6px;
+  margin-bottom: 22px;
   box-shadow: 0 4px 18px rgba(16, 35, 58, 0.35);
 }
 
@@ -558,12 +558,12 @@ ul { padding: 0; list-style: none; }
 }
 
 .footer-logo {
-  width: 96px;
-  height: 96px;
-  border-radius: 12px;
+  width: 128px;
+  height: 128px;
+  border-radius: 16px;
   background: var(--white);
-  padding: 8px;
-  margin-bottom: 16px;
+  padding: 10px;
+  margin-bottom: 18px;
 }
 
 .footer-tagline {
