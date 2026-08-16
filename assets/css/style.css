@@ -279,8 +279,20 @@ ul { padding: 0; list-style: none; }
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-bottom: 34px;
+  margin-bottom: 14px;
 }
+
+.hero-alt {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.68);
+  margin-bottom: 30px;
+}
+.hero-alt a {
+  color: #a8e3da;
+  text-decoration: underline;
+  text-decoration-color: rgba(168, 227, 218, 0.45);
+}
+.hero-alt a:hover { text-decoration-color: #a8e3da; }
 
 .hero-stats {
   display: grid;
@@ -363,6 +375,36 @@ ul { padding: 0; list-style: none; }
   font-size: 0.93rem;
   color: var(--ink-soft);
 }
+
+.card-atuacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-cta {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 14px;
+  font-family: var(--font-h);
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--teal-text);
+}
+.card-cta::after { content: " →"; }
+.card-cta:hover { text-decoration: underline; }
+
+.card-icon-stroke {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--teal-soft);
+  color: var(--teal-text);
+  margin-bottom: 16px;
+}
+.card-icon-stroke svg { width: 26px; height: 26px; }
 
 /* ---------- Sobre ---------- */
 .sobre-grid {
