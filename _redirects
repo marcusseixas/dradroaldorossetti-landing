@@ -1,0 +1,6 @@
+# Redirecionamentos permanentes
+/home / 301
+/home/ / 301
+
+# www -> domínio principal
+https://www.dradroaldorossetti.com.br/* https://dradroaldorossetti.com.br/:splat 301
