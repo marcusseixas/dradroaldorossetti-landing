@@ -149,9 +149,8 @@ ul { padding: 0; list-style: none; }
 }
 
 .brand-logo {
-  width: 52px;
-  height: 52px;
-  border-radius: 10px;
+  width: 68px;
+  height: 68px;
 }
 
 .site-nav {
@@ -229,6 +228,16 @@ ul { padding: 0; list-style: none; }
   display: grid;
   gap: 36px;
   padding-block: 56px 64px;
+}
+
+.hero-logo {
+  width: 66px;
+  height: 66px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 18px rgba(16, 35, 58, 0.35);
 }
 
 .hero-eyebrow {
@@ -343,16 +352,12 @@ ul { padding: 0; list-style: none; }
 }
 
 .card-icon {
-  width: 52px;
-  height: 52px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: var(--teal-soft);
-  color: var(--teal-text);
   margin-bottom: 16px;
 }
-.card-icon svg { width: 26px; height: 26px; }
+.card-icon img {
+  width: 62px;
+  height: 62px;
+}
 
 .card h3 {
   font-size: 1.05rem;
@@ -434,6 +439,15 @@ ul { padding: 0; list-style: none; }
 .credenciais-box p + p { margin-top: 4px; color: #a8e3da; }
 
 /* ---------- FAQ ---------- */
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+.faq-icon { width: 56px; height: 56px; flex-shrink: 0; }
+.faq-header .section-title { margin-bottom: 0; }
+
 .faq-list { display: grid; gap: 12px; }
 
 .faq-item {
@@ -544,12 +558,12 @@ ul { padding: 0; list-style: none; }
 }
 
 .footer-logo {
-  width: 64px;
-  height: 64px;
-  border-radius: 10px;
+  width: 96px;
+  height: 96px;
+  border-radius: 12px;
   background: var(--white);
-  padding: 6px;
-  margin-bottom: 14px;
+  padding: 8px;
+  margin-bottom: 16px;
 }
 
 .footer-tagline {
