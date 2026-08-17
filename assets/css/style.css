@@ -357,10 +357,13 @@ ul { padding: 0; list-style: none; }
   border-radius: var(--radius);
   padding: 26px 24px;
   box-shadow: var(--shadow);
+  text-align: center;
 }
 
 .card-icon {
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
 }
 .card-icon img {
   width: 62px;
@@ -379,6 +382,7 @@ ul { padding: 0; list-style: none; }
 .card-atuacao {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .card-cta {
@@ -403,6 +407,7 @@ ul { padding: 0; list-style: none; }
   background: var(--teal-soft);
   color: var(--teal-text);
   margin-bottom: 16px;
+  margin-inline: auto;
 }
 .card-icon-stroke svg { width: 26px; height: 26px; }
 
@@ -547,7 +552,8 @@ ul { padding: 0; list-style: none; }
   padding: 28px 26px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 10px;
 }
 
@@ -568,8 +574,10 @@ ul { padding: 0; list-style: none; }
 
 .contato-card .btn { margin-top: 8px; }
 
-.link-phone, .link-mail { color: var(--white); font-weight: 500; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.4); }
-.link-phone:hover, .link-mail:hover { text-decoration-color: var(--white); }
+.link-mail { color: var(--white); font-weight: 500; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.4); }
+.link-mail:hover { text-decoration-color: var(--white); }
+
+.contato-obs { font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); }
 
 .link-arrow {
   color: var(--teal-text);
