@@ -25,4 +25,16 @@
   // Ano do rodapé
   var ano = document.getElementById('ano');
   if (ano) ano.textContent = String(new Date().getFullYear());
+
+  // Google Ads — conversão no clique de qualquer link de WhatsApp
+  document.addEventListener('click', function (e) {
+    var link = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]') : null;
+    if (link && typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        send_to: 'AW-17400747212/rhskCJ6vjOUcEMypqelA',
+        value: 1.0,
+        currency: 'BRL'
+      });
+    }
+  });
 })();
