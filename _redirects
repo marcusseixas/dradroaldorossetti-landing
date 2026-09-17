@@ -2,6 +2,15 @@
 /home / 301
 /home/ / 301
 
+# Legados do WordPress antigo: feeds RSS não existem mais no site estático
+/feed / 301
+/feed/ / 301
+/category/* / 301
+/tag/* / 301
+/author/* / 301
+/wp-content/* / 301
+/wp-includes/* / 301
+
 # www -> domínio principal: feito por Redirect Rule no Cloudflare (nível de zona).
 # O _redirects do Pages só aceita caminhos como origem — URL absoluta na origem
 # é ignorada em produção (verificado em 24/08/2026).
