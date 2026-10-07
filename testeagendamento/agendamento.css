@@ -1,0 +1,124 @@
+/* ============================================================
+   Seção "Agendamento online" — complemento ao style.css
+   Mobile-first · sem !important
+   ============================================================ */
+
+/* ---------- Banner de prévia (remover no deploy) ---------- */
+.preview-banner {
+  background: #fff8e1;
+  border-bottom: 1px solid #f2e2a8;
+  color: #7a5c00;
+  font-family: var(--font-h);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 8px 16px;
+}
+.preview-banner a { color: inherit; text-decoration: underline; }
+
+/* ---------- Card da seção ---------- */
+.ag-card {
+  background: var(--white);
+  border: 1px solid var(--gray-2);
+  border-top: 4px solid var(--teal);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 20px;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.ag-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  justify-content: center;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+}
+.ag-info span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.ag-info svg { width: 16px; height: 16px; color: var(--teal-text); flex-shrink: 0; }
+
+/* ---------- Tabs ---------- */
+.ag-tabs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.ag-tab {
+  font-family: var(--font-h);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  background: var(--gray-1);
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.ag-tab:hover { color: var(--teal-text); }
+.ag-tab[aria-selected="true"] {
+  background: var(--teal-soft);
+  border-color: var(--teal-text);
+  color: var(--teal-text);
+}
+.ag-tab:focus-visible { outline-offset: 0; }
+
+/* ---------- Painel do embed ---------- */
+.ag-panel iframe {
+  display: block;
+  width: 100%;
+  min-height: 560px;
+  border: 1px solid var(--gray-2);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+}
+
+/* Placeholder exibido enquanto o snippet real do Google Agenda não é colado */
+.ag-placeholder {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  min-height: 420px;
+  padding: 28px 20px;
+  text-align: center;
+  border: 2px dashed var(--gray-2);
+  border-radius: var(--radius-sm);
+  background: var(--gray-1);
+  color: var(--ink-soft);
+}
+.ag-placeholder svg { width: 40px; height: 40px; color: var(--teal-text); }
+.ag-placeholder strong {
+  font-family: var(--font-h);
+  font-size: 0.98rem;
+  color: var(--navy);
+}
+.ag-placeholder small { font-size: 0.8rem; max-width: 46ch; }
+
+/* ---------- Rodapé do card ---------- */
+.ag-alt {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--gray-1);
+  text-align: center;
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}
+.ag-alt p { font-size: 0.9rem; color: var(--ink-soft); }
+
+.ag-privacy { font-size: 0.78rem; color: var(--ink-soft); max-width: 56ch; }
+.ag-privacy a { text-decoration: underline; }
+
+@media (min-width: 640px) {
+  .ag-card { padding: 34px 32px; }
+  .ag-tabs { grid-template-columns: 1fr 1fr; }
+}
